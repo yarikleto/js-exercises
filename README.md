@@ -1,6 +1,6 @@
 # js-tasks
 
-1. Transform from a decimal number system to binary one
+Transform from a decimal number system to binary one
 ```js
 const decimalToBinary = (decimalNumber) => {
 // Your code
@@ -13,7 +13,7 @@ console.assert(decimalToBinary(798) === "1100011110");
 
 ---
 
-2. Transform from a binary number system to decimal one
+Transform from a binary number system to decimal one
 ```js
 const binaryToDecimal = (binaryNumber) => {
 // Your code
@@ -26,7 +26,7 @@ console.assert(binaryToDecimal("1100011110") === 798);
 
 ---
 
-2. Summarize two binary items
+Summarize two binary numbers
 ```js
 const summarizeBinaries = (x, y) => {
 // Your code
@@ -40,3 +40,14 @@ console.assert(
 );
 ```
 [Soluction](summarizeBinaries.md)
+
+---
+
+Substruct two binary numbers
+```js
+const substructBinaries = (x, y) => {
+// Your code
+}
+
+```
+[Soluction](substructBinaries.md)
