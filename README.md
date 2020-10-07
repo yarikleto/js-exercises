@@ -6,8 +6,8 @@ const decimalToBinary = (decimalNumber) => {
 // Your code
 }
 
-decimalToBinary(5) === "101";
-decimalToBinary(798) === "1100011110";
+console.assert(decimalToBinary(5) === "101");
+console.assert(decimalToBinary(798) === "1100011110");
 ```
 [Soluction](decimalToBinary.md)
 
@@ -19,7 +19,24 @@ const binaryToDecimal = (binaryNumber) => {
 // Your code
 }
 
-binaryToDecimal("101") === 5;
-binaryToDecimal("1100011110") === 798;
+console.assert(binaryToDecimal("101") === 5);
+console.assert(binaryToDecimal("1100011110") === 798);
 ```
 [Soluction](binaryToDecimal.md)
+
+---
+
+2. Summarize two binary items
+```js
+const summarizeBinaries = (x, y) => {
+// Your code
+}
+
+console.assert(
+  summarizeBinaries("101", "11101") === "100010"
+);
+console.assert(
+  summarizeBinaries("1100011110", "10101010101") === "100001110011"
+);
+```
+[Soluction](summarizeBinaries.md)
