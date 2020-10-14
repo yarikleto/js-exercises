@@ -51,3 +51,18 @@ const substructBinaries = (x, y) => {
 
 ```
 [Soluction](substructBinaries.md)
+
+---
+
+Return an array of each bit of a number (32 bits). You can use only binary operators. 
+```js
+const logBinary = (n) => {
+// Your code
+}
+
+logBinary(1); //-> [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1];
+logBinary(2**31); //-> [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+```
+[Soluction](logBinary.md)
+
+---
