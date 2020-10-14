@@ -54,7 +54,7 @@ const substructBinaries = (x, y) => {
 
 ---
 
-Return an array of each bit of a number (32 bits). You can use only binary operators. 
+Return an array of each bit of a number (32 bits). You can use only `binary operators`, `for`, `while`. 
 ```js
 const logBinary = (n) => {
 // Your code
