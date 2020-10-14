@@ -54,7 +54,7 @@ const substructBinaries = (x, y) => {
 
 ---
 
-Change a bit value of a bit vector (32 bits).
+Change a bit value of a bit vector to zero (32 bits).
 ```js
 const changeBitOfVector = (index, bitVector) => {
 // Your code
