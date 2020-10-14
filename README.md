@@ -54,15 +54,24 @@ const substructBinaries = (x, y) => {
 
 ---
 
-Return an array of each bit of a number (32 bits). You can use only `binary operators`, `for`, `while`. 
+Change a bit value of a bit vector (32 bits).
 ```js
-const logBinary = (n) => {
+const changeBitOfVector = (index, bitVector) => {
 // Your code
 }
 
-logBinary(1); //-> [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1];
-logBinary(2**31); //-> [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+let bitVector = [255, 3, 7];
+
+changeBitOfVector(0);
+console.log(bitVector); //-> [254, 3, 7]
+
+changeBitOfVector(33);
+console.log(bitVector); //-> [255, 1, 7]
+
+changeBitOfVector(66);
+console.log(bitVector); //-> [255, 3, 3]
+
 ```
-[Soluction](logBinary.md)
+[Soluction](changeBitOfVector.md)
 
 ---
