@@ -54,9 +54,9 @@ const substructBinaries = (x, y) => {
 
 ---
 
-Create a binary vector (32 bits) 
+Create a [bit vector](https://en.wikipedia.org/wiki/Bit_array) (each item has 32 bits)
 ```js
-const getBinaryVector = (amountOfbites) => {
+const createBitVector = (amountOfbites) => {
   // Your code
   return {
     turnOn: index => {},
@@ -67,22 +67,22 @@ const getBinaryVector = (amountOfbites) => {
 }
 
 
-const binaryVector = getBinaryVector(34);
+const bitVector = createBitVector(34);
 
-binaryVector.turnOn(0);
-binaryVector.get(0); // 1
+bitVector.turnOn(0);
+bitVector.get(0); // 1
 
-binaryVector.turnOff(0);
-binaryVector.get(0); // 0
+bitVector.turnOff(0);
+bitVector.get(0); // 0
 
-binaryVector.turnOn(34);
-binaryVector.toggle(33);
-binaryVector.get(33); // 1
-binaryVector.toggle(33);
-binaryVector.get(33); // 0
-binaryVector.get(34); // 1
+bitVector.turnOn(34);
+bitVector.toggle(33);
+bitVector.get(33); // 1
+bitVector.toggle(33);
+bitVector.get(33); // 0
+bitVector.get(34); // 1
 
 ```
-[Soluction](getBinaryVector.md)
+[Soluction](createBitVector.md)
 
 ---
