@@ -9,32 +9,29 @@ function createBitVector(amountOfbites) {
 
   const vector = new Uint32Array(((amountOfbites - 1) >>> 5) + 1);
 
-  const getArrayIndex = index => index >>> 5; // Like Math.trunc(index / 2**5)
-  const getBitIndex = index => index % SIZE;
+  const validateIndex = index => {
+    if (index >= 0 && index < amountOfbites) return;
+    throw Error(`Index must be bigger than 0 and less than ${amountOfbites}`);
+  }
 
   const get = index => {
-    const arrIndex = getArrayIndex(index);
-    const bitIndex = getBitIndex(index);
-    
-    return vector[arrIndex] >>> bitIndex & 1;
-  };
+    validateIndex(index);
+    return vector[index >>> 5] >>> index & 1;
+  }
 
   const turnOn = index => {
-    const arrIndex = getArrayIndex(index);
-    const bitIndex = getBitIndex(index);
-    vector[arrIndex] = (1 << bitIndex) | vector[arrIndex];
+    validateIndex(index);
+    vector[index >>> 5] |= (1 << index);
   };
 
   const toggle = index => {
-    const arrIndex = getArrayIndex(index);
-    const bitIndex = getBitIndex(index);
-    vector[arrIndex] = (1 << bitIndex) ^ vector[arrIndex];
+    validateIndex(index);
+    vector[index >>> 5] ^= (1 << index);
   }
 
   const turnOff = index => {
-    const arrIndex = getArrayIndex(index);
-    const bitIndex = getBitIndex(index);
-    vector[arrIndex] = ~(1 << bitIndex) & vector[arrIndex];
+    validateIndex(index);
+    vector[index >>> 5] &= ~(1 << index);
   };
   
   return {
