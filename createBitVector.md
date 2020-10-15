@@ -38,7 +38,8 @@ function createBitVector(amountOfbites) {
     get,
     toggle,
     turnOn,
-    turnOff
+    turnOff,
+    __proto__: null
   };
 }
 ```
