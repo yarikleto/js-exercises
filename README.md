@@ -82,6 +82,8 @@ bitVector.toggle(32);
 bitVector.get(32); // 0
 bitVector.get(33); // 1
 
+bitVector.turnOn(34); // Error: Index must be bigger than 0 and less than 34
+
 ```
 [Soluction](createBitVector.md)
 
