@@ -75,12 +75,12 @@ bitVector.get(0); // 1
 bitVector.turnOff(0);
 bitVector.get(0); // 0
 
-bitVector.turnOn(34);
-bitVector.toggle(33);
+bitVector.turnOn(33);
+bitVector.toggle(32);
+bitVector.get(32); // 1
+bitVector.toggle(32);
+bitVector.get(32); // 0
 bitVector.get(33); // 1
-bitVector.toggle(33);
-bitVector.get(33); // 0
-bitVector.get(34); // 1
 
 ```
 [Soluction](createBitVector.md)
