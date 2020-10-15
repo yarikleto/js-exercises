@@ -1,4 +1,4 @@
-# js-tasks
+# JS exercises
 
 Transform from a decimal number system to binary one
 ```js
