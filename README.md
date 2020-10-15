@@ -89,7 +89,6 @@ bitVector.turnOn(34); // Error: Index must be bigger than 0 and less than 34
 
 ---
 
-
 Splice a chunk of a donor binary to main one.
 Need to select bits from `0` to `n` of `donorBinary` and insert into `mainBinary` from `start` to `end`.
 `n` is difference between `start` and `end` (inclusively).
@@ -110,5 +109,21 @@ spliceBinary(0b1111111111, 0b0, 2, 5).toString(2) //-> "1111000011"
 
 ```
 [Soluction](spliceBinary.md)
+
+---
+
+Write a function that determines the number of bits that can be changed in order to get `b` from number `a`.
+
+```js
+const determineBits = (a, b) => {
+  // Your code
+};
+
+determineBits(0b11, 0b0); //-> 2
+determineBits(0b1001, 0b101); //-> 2
+determineBits(0b11111, 0b10111); //-> 1
+determineBits(0b1, 0b1); //-> 0
+```
+[Soluction](determineBits.md)
 
 ---
