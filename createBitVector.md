@@ -1,5 +1,5 @@
 ```js
-function getBinaryVector(amountOfbites) {
+function createBitVector(amountOfbites) {
   const SIZE = 32;
   const BITS_LIMIT = SIZE * (2**SIZE - 1);
 
