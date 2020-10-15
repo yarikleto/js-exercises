@@ -1,6 +1,6 @@
 ```js
 const swapBits = value => {
-  const EVEN_MASK = 0xaaaaaaaa; // ...101010 - 32 bits
+  const EVEN_MASK = 0xaaaaaaaa; // ...101010  (32 bits)
   const ODD_MASK = EVEN_MASK >>> 1; // ...010101
 
   /*
