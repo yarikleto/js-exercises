@@ -7,9 +7,9 @@ function getBinaryVector(amountOfbites) {
     throw Error(`Amount of bites must be bigger than 0 and less than ${BITS_LIMIT}`);
   }
 
-  const vector = new Uint32Array((amountOfbites - 1) / SIZE + 1);
+  const vector = new Uint32Array(((amountOfbites - 1) >>> 5) + 1);
 
-  const getArrayIndex = index => Math.trunc(index / SIZE);
+  const getArrayIndex = index => index >>> 5;
   const getBitIndex = index => index % SIZE;
 
   const get = index => {
