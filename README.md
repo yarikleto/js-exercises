@@ -2,7 +2,7 @@
 
 Transform from a decimal number system to binary one
 ```js
-const decimalToBinary = (decimalNumber) => {
+const decimalToBinary = decimalNumber => {
 // Your code
 }
 
@@ -15,7 +15,7 @@ console.assert(decimalToBinary(798) === "1100011110");
 
 Transform from a binary number system to decimal one
 ```js
-const binaryToDecimal = (binaryNumber) => {
+const binaryToDecimal = binaryNumber => {
 // Your code
 }
 
@@ -56,7 +56,7 @@ const substructBinaries = (x, y) => {
 
 Create a [bit vector](https://en.wikipedia.org/wiki/Bit_array) (each item has 32 bits)
 ```js
-const createBitVector = (amountOfbites) => {
+const createBitVector = amountOfbites => {
   // Your code
   return {
     turnOn: index => {},
@@ -130,7 +130,7 @@ determineBits(0b1, 0b1); //-> 0
 
 Write an algorithm that changes the even bits to odd ones.
 ```js
-const swapBits = (a) => {
+const swapBits = value => {
   // Your code
 };
 
