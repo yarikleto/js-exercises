@@ -1,7 +1,7 @@
 ```js
 const swapBits = value => {
   const EVEN_MASK = 0xaaaaaaaa; // ...101010  (32 bits)
-  const ODD_MASK = EVEN_MASK >>> 1; // ...010101
+  const ODD_MASK = 0x55555555; // ...010101 (32 bits)
 
   /*
     1. Select even bits of the value and convert them to odd ones.
