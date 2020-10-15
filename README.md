@@ -127,3 +127,14 @@ determineBits(0b1, 0b1); //-> 0
 [Soluction](determineBits.md)
 
 ---
+
+Write an algorithm that changes the even bits to odd ones.
+```js
+const swapBits = (a) => {
+  // Your code
+};
+
+swapBits(0b101010).toString(2); //-> "10101"
+swapBits(0b11011).toString(2); //-> "100111"
+```
+[Soluction](swapBits.md)
