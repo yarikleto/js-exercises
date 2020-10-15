@@ -1,7 +1,7 @@
 ```js
 function getBinaryVector(amountOfbites) {
   const SIZE = 32;
-  const BITS_LIMIT = SIZE * (2**32 - 1);
+  const BITS_LIMIT = SIZE * (2**SIZE - 1);
 
   if (amountOfbites < 0 || amountOfbites > BITS_LIMIT) {
     throw Error(`Amount of bites must be bigger than 0 and less than ${BITS_LIMIT}`);
