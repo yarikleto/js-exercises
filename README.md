@@ -129,6 +129,7 @@ determineBits(0b1, 0b1); //-> 0
 ---
 
 Write an algorithm that changes the even bits to odd ones.
+Loops cannot be used (`for`, `while`, etc.)
 ```js
 const swapBits = value => {
   // Your code
