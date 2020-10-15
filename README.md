@@ -54,24 +54,35 @@ const substructBinaries = (x, y) => {
 
 ---
 
-Change a bit value of a bit vector to zero (32 bits).
+Create a binary vector (32 bits) 
 ```js
-const changeBitOfVector = (index, bitVector) => {
-// Your code
+const getBinaryVector = (amountOfbites) => {
+  // Your code
+  return {
+    turnOn: index => {},
+    turnOff: index => {},
+    toggle: index => {},
+    get: index => {},
+  }
 }
 
-let bitVector = [255, 3, 7];
 
-changeBitOfVector(0, bitVector); // 255 to 254, or ..11111111 to ..11111110
-console.log(bitVector); //-> [254, 3, 7]
+const binaryVector = getBinaryVector(34);
 
-changeBitOfVector(33, bitVector); // 3 to 1, or ..11 to ..10
-console.log(bitVector); //->  [254, 1, 7]
+binaryVector.turnOn(0);
+binaryVector.get(0); // 1
 
-changeBitOfVector(66, bitVector); // 7 to 3, ..111 to ..011
-console.log(bitVector); //-> [254, 1, 3]
+binaryVector.turnOff(0);
+binaryVector.get(0); // 0
+
+binaryVector.turnOn(34);
+binaryVector.toggle(33);
+binaryVector.get(33); // 1
+binaryVector.toggle(33);
+binaryVector.get(33); // 0
+binaryVector.get(34); // 1
 
 ```
-[Soluction](changeBitOfVector.md)
+[Soluction](getBinaryVector.md)
 
 ---
