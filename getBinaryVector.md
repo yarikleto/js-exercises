@@ -9,7 +9,7 @@ function getBinaryVector(amountOfbites) {
 
   const vector = new Uint32Array(((amountOfbites - 1) >>> 5) + 1);
 
-  const getArrayIndex = index => index >>> 5;
+  const getArrayIndex = index => index >>> 5; // Like Math.trunc(index / 2**5)
   const getBitIndex = index => index % SIZE;
 
   const get = index => {
