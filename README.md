@@ -142,19 +142,22 @@ swapBits(0b11011).toString(2); //-> "100111"
 
 ---
 
-Write a [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)).
+Write a [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) with limited size.
 ```js
-const createStack = () => {
+const createStack = size => {
   // Your code
 }
 
-const stack = createStack();
+const stack = createStack(3);
 stack.push(1);
 stack.push(2);
 stack.push(3);
 stack.peek(); //-> 3
 stack.pop(); //-> 3
 stack.peek(); //-> 2
+
+stack.push(4);
+stack.push(5); //-> Error: Stack overflow
 ```
 [Soluction](createStack.md)
 
