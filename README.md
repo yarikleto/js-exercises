@@ -139,3 +139,23 @@ swapBits(0b101010).toString(2); //-> "10101"
 swapBits(0b11011).toString(2); //-> "100111"
 ```
 [Soluction](swapBits.md)
+
+---
+
+Write a [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)).
+```js
+const createStack = () => {
+  // Your code
+}
+
+const stack = createStack();
+stack.push(1);
+stack.push(2);
+stack.push(3);
+stack.peek(); //-> 3
+stack.pop(); //-> 3
+stack.peek(); //-> 2
+```
+[Soluction](createStack.md)
+
+---
