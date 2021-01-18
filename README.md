@@ -162,3 +162,39 @@ stack.push(5); //-> Error: Stack overflow
 [Soluction](createStack.md)
 
 ---
+
+Define a helper function that gets one class and extends it with two others
+```js
+const applyMixins (derivedCtor, baseCtors) => {
+  // Your code
+}
+//The parent classes
+class A {
+
+    methodA(){
+        console.log("A")
+    }
+}
+
+class B {
+
+    methodB(){
+        console.log("B")
+    }
+}
+
+//The child class
+class C {
+
+}
+
+//Using mixins
+applyMixins(C, [A, B])
+let o = new C()
+o.methodA() //-> 'A'
+o.methodB() //-> 'B'
+
+```
+[Soluction](applyMixins.md)
+
+---
