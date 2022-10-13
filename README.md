@@ -136,7 +136,7 @@ const swapBits = value => {
 };
 
 swapBits(0b101010).toString(2); //-> "10101"
-swapBits(0b10101).toString(2); //-> "101010"
+swapBits(0b10101).toString(2); //-> "1010"
 ```
 [Soluction](swapBits.md)
 
